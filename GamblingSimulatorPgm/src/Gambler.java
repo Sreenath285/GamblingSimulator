@@ -35,6 +35,6 @@ public class Gambler {
                 System.out.println("Day : " + i + " Gambler lost the game");
             }
         }
-        System.out.println("Total amount : " + dailyTotal);
+        System.out.println("Total amount : " + (dailyTotal + initialStake));
     }
 }
