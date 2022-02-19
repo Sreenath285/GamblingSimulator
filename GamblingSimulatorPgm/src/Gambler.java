@@ -16,7 +16,6 @@ public class Gambler {
 
         int maxWinDaily, minWInDaily;
         int dailyTotal = initialStake;
-        int totalAmt = 0;
         
         for (int i = 1; i <= noOfDays; i++) {
             maxWinDaily = dailyTotal + (initialStake / 2);
@@ -35,8 +34,7 @@ public class Gambler {
             else {
                 System.out.println("Day : " + i + " Gambler lost the game");
             }
-            totalAmt += dailyTotal;
         }
-        System.out.println("Total amount : " + totalAmt);
+        System.out.println("Total amount : " + dailyTotal);
     }
 }
